@@ -1,6 +1,6 @@
 from random import randrange, getrandbits
 
-# algo déjà implémenté dans python avec "pow". mais cette fonction est changé si on import math. dans ce cas ça peut être cool (même si je crois que ça marche pas tout a fais bien comme il faudrai c’est pour ça que je privilégie la fonction de python de base).
+# algo déjà implémenté dans python avec "pow". mais cette fonction est changé si on import math. dans ce cas ça peut être utile (même si je crois que ça marche pas tout a fais bien comme il faudrai c’est pour ça que je privilégie la fonction de python de base).
 def exmod(x,k,n):
      resultat=1
      k=int((format(k,'b')))
@@ -63,7 +63,7 @@ def premieravec(n):
         pgcd, u, v = EE(e,n)
     return(e, pgcd, u, v)
 
-# Générateur de clef. avec l la «compléxité» (la longueur de la clef) en bits donc (ici idéalement 1024, bon compromis complexité et temps de calcul)
+# Générateur de clef. avec l la «compléxité» (la longueur de la clef) en bits donc
 
 def clef(l):
     p = premier(l)
